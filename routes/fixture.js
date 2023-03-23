@@ -5,7 +5,7 @@ const router = express.Router()
 
 
 router.post('/addFixture', newFixture)
-// router.get('/events', allEvent)
+
 router.get('/allfixture', specificFixture)
 
 
