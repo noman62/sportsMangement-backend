@@ -15,6 +15,16 @@ const userSchema = new Schema(
       required: true,
       unique: true,
     },
+    roll: {
+      type: String,
+      trim: true,
+      required: true,
+    },
+    session: {
+      type: String,
+      trim: true,
+      required: true,
+    },
     password: {
       type: String,
       required: true,
