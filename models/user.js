@@ -25,6 +25,11 @@ const userSchema = new Schema(
       trim: true,
       required: true,
     },
+    department: {
+      type: String,
+      trim: true,
+      required: true,
+    },
     password: {
       type: String,
       required: true,

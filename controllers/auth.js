@@ -5,7 +5,7 @@ const Jwt=require('jsonwebtoken')
 //User Registration
 export const register = async (req, res) => {
   try {
-    const { name, email,roll,session,password,imageURL } = req.body
+    const { name, email,roll,session,department,password,imageURL } = req.body
 
     // Name validation
     if (!name) return res.status(400).send('Name is required')
@@ -30,6 +30,7 @@ export const register = async (req, res) => {
       email,
       roll,
       session,
+      department,
       password: hashedPassword,
       imageURL
     })
